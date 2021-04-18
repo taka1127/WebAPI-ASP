@@ -23,7 +23,7 @@ namespace WebApiSample01.Controllers
         public IHttpActionResult Get(int id)
         {
             var quote = quotesDbContext.Quotes.Find(id);
-            if(quote == null)
+            if (quote == null)
             {
                 NotFound();
             }
@@ -42,13 +42,13 @@ namespace WebApiSample01.Controllers
         {
             var entity = quotesDbContext.Quotes.FirstOrDefault(data => data.Id == id);
             //var entity = quotesDbContext.Quotes.Find(data => data.Id == id);
-            if(entity == null)
+            if (entity == null)
             {
                 return BadRequest("リクエスト失敗。。。");
             }
             entity.Title = quote.Title;
             entity.Author = quote.Author;
-            entity.Author = quote.Description;
+            entity.Description = quote.Description;
             quotesDbContext.SaveChanges();
             return Ok("リクエスト成功！");
         }

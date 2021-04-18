@@ -9,7 +9,7 @@ using WebApiSample01.Models;
 
 namespace WebApiSample01.Controllers
 {
-    public class Quotes_chap01Controller : ApiController
+    public class Quotes_chap01Controller_chap01 : ApiController
     {
         QuotesDbContext quotesDbContext = new QuotesDbContext();
 
@@ -40,7 +40,7 @@ namespace WebApiSample01.Controllers
             //var entity = quotesDbContext.Quotes.Find(data => data.Id == id);
             entity.Title = quote.Title;
             entity.Author = quote.Author;
-            entity.Author = quote.Description;
+            entity.Description = quote.Description;
             quotesDbContext.SaveChanges();
         }
 

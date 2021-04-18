@@ -4,36 +4,52 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using WebApiSample01.Data;
 using WebApiSample01.Models;
 
 namespace WebApiSample01.Controllers
 {
     public class QuotesController : ApiController
     {
-        static List<Quote> _quotes = new List<Quote>()
-        {
-            new Quote() {Id = 0 ,Author = "山本",Description = "えんぴつ", Title = "事務用品" },
-            new Quote() {Id = 1 ,Author = "本田",Description = "消しゴム", Title = "事務用品" }
-        };
+        QuotesDbContext quotesDbContext = new QuotesDbContext();
 
+        // GET: api/Quotes
         public IEnumerable<Quote> Get()
         {
-            return _quotes;
+            return quotesDbContext.Quotes;
         }
 
-        public void Post([FromBody] Quote quote)
+        // GET: api/Quotes/5
+        public Quote Get(int id)
         {
-            _quotes.Add(quote);
+            var quote = quotesDbContext.Quotes.Find(id);
+            return quote;
         }
 
-        public void Put(int id, [FromBody] Quote quote)
+        // POST: api/Quotes
+        public void Post([FromBody]Quote quote)
         {
-            _quotes[id] = quote;
+            quotesDbContext.Quotes.Add(quote);
+            quotesDbContext.SaveChanges();
         }
 
+        // PUT: api/Quotes/5
+        public void Put(int id, [FromBody]Quote quote)
+        {
+            var entity = quotesDbContext.Quotes.FirstOrDefault(data => data.Id == id);
+            //var entity = quotesDbContext.Quotes.Find(data => data.Id == id);
+            entity.Title = quote.Title;
+            entity.Author = quote.Author;
+            entity.Author = quote.Description;
+            quotesDbContext.SaveChanges();
+        }
+
+        // DELETE: api/Quotes/5
         public void Delete(int id)
         {
-            _quotes.RemoveAt(id);
+            var quote = quotesDbContext.Quotes.Find(id);
+            quotesDbContext.Quotes.Remove(quote);
+            quotesDbContext.SaveChanges();
         }
     }
 }

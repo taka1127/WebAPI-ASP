@@ -10,6 +10,8 @@ namespace WebApiSample01
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
+            //config.Formatters.Remove(config.Formatters.XmlFormatter);
+            //config.Formatters.Add(config.Formatters.JsonFormatter);
 
             // Web API routes
             config.MapHttpAttributeRoutes();

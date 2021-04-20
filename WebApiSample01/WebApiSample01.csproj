@@ -128,6 +128,19 @@
     <Compile Include="Controllers\Quotes_chap02Controller.cs" />
     <Compile Include="Controllers\Quotes_chap01Controller.cs" />
     <Compile Include="Controllers\QuotesController.cs" />
+    <Compile Include="Migrations\202104171334000_InitialCreate.cs" />
+    <Compile Include="Migrations\202104171334000_InitialCreate.Designer.cs">
+      <DependentUpon>202104171334000_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104201248419_QuoteTypeAdded.cs" />
+    <Compile Include="Migrations\202104201248419_QuoteTypeAdded.Designer.cs">
+      <DependentUpon>202104201248419_QuoteTypeAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104201305295_QuoteCreateAtAdded.cs" />
+    <Compile Include="Migrations\202104201305295_QuoteCreateAtAdded.Designer.cs">
+      <DependentUpon>202104201305295_QuoteCreateAtAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="_bac\bac_QuotesController.cs" />
     <Compile Include="_bac\QuotesController_WithEntity.cs" />
     <Compile Include="Data\QuotesDbContext.cs" />
@@ -151,6 +164,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202104171334000_InitialCreate.resx">
+      <DependentUpon>202104171334000_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104201248419_QuoteTypeAdded.resx">
+      <DependentUpon>202104201248419_QuoteTypeAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104201305295_QuoteCreateAtAdded.resx">
+      <DependentUpon>202104201305295_QuoteCreateAtAdded.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

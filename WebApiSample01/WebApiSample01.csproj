@@ -125,6 +125,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\Quotes_chap03Controller.cs" />
     <Compile Include="Controllers\Quotes_chap02Controller.cs" />
     <Compile Include="Controllers\Quotes_chap01Controller.cs" />
     <Compile Include="Controllers\QuotesController.cs" />
@@ -139,6 +140,10 @@
     <Compile Include="Migrations\202104201305295_QuoteCreateAtAdded.cs" />
     <Compile Include="Migrations\202104201305295_QuoteCreateAtAdded.Designer.cs">
       <DependentUpon>202104201305295_QuoteCreateAtAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104221230557_ValidationAdded.cs" />
+    <Compile Include="Migrations\202104221230557_ValidationAdded.Designer.cs">
+      <DependentUpon>202104221230557_ValidationAdded.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="_bac\bac_QuotesController.cs" />
@@ -174,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104201305295_QuoteCreateAtAdded.resx">
       <DependentUpon>202104201305295_QuoteCreateAtAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104221230557_ValidationAdded.resx">
+      <DependentUpon>202104221230557_ValidationAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

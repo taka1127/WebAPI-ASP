@@ -125,6 +125,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\Quotes_chap04Controller.cs" />
     <Compile Include="Controllers\Quotes_chap03Controller.cs" />
     <Compile Include="Controllers\Quotes_chap02Controller.cs" />
     <Compile Include="Controllers\Quotes_chap01Controller.cs" />

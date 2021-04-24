@@ -36,6 +36,15 @@ c:\users\taka0\documents\visual studio 2015\Projects\WebApiSample01\WebApiSample
 c:\users\taka0\documents\visual studio 2015\Projects\WebApiSample01\WebApiSample01\bin\System.Net.Http.Formatting.xml
 c:\users\taka0\documents\visual studio 2015\Projects\WebApiSample01\WebApiSample01\bin\System.Web.Http.xml
 c:\users\taka0\documents\visual studio 2015\Projects\WebApiSample01\WebApiSample01\bin\System.Web.Http.WebHost.xml
-c:\users\taka0\documents\visual studio 2015\Projects\WebApiSample01\WebApiSample01\obj\Debug\WebApiSample01.csprojResolveAssemblyReference.cache
 c:\users\taka0\documents\visual studio 2015\Projects\WebApiSample01\WebApiSample01\obj\Debug\WebApiSample01.dll
 c:\users\taka0\documents\visual studio 2015\Projects\WebApiSample01\WebApiSample01\obj\Debug\WebApiSample01.pdb
+C:\Users\taka0\Documents\Visual Studio 2015\Projects\WebApiSample01\WebApiSample01\bin\EntityFramework.dll
+C:\Users\taka0\Documents\Visual Studio 2015\Projects\WebApiSample01\WebApiSample01\bin\EntityFramework.SqlServer.dll
+C:\Users\taka0\Documents\Visual Studio 2015\Projects\WebApiSample01\WebApiSample01\bin\EntityFramework.xml
+C:\Users\taka0\Documents\Visual Studio 2015\Projects\WebApiSample01\WebApiSample01\bin\EntityFramework.SqlServer.xml
+C:\Users\taka0\Documents\Visual Studio 2015\Projects\WebApiSample01\WebApiSample01\obj\Debug\WebApiSample01.csprojResolveAssemblyReference.cache
+C:\Users\taka0\Documents\Visual Studio 2015\Projects\WebApiSample01\WebApiSample01\obj\Debug\WebApiSample01.Migrations.InitialCreate.resources
+C:\Users\taka0\Documents\Visual Studio 2015\Projects\WebApiSample01\WebApiSample01\obj\Debug\WebApiSample01.csproj.GenerateResource.Cache
+C:\Users\taka0\Documents\Visual Studio 2015\Projects\WebApiSample01\WebApiSample01\obj\Debug\WebApiSample01.Migrations.QuoteTypeAdded.resources
+C:\Users\taka0\Documents\Visual Studio 2015\Projects\WebApiSample01\WebApiSample01\obj\Debug\WebApiSample01.Migrations.QuoteCreateAtAdded.resources
+C:\Users\taka0\documents\visual studio 2015\Projects\WebApiSample01\WebApiSample01\obj\Debug\WebApiSample01.Migrations.ValidationAdded.resources
